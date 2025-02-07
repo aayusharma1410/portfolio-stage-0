@@ -1,0 +1,289 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #F5F7FA; /* Soft Off-White */
+  color: #333333; /* Dark Gray */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar Styles (Your existing navbar styles go here) */
+.navbar {
+  background: linear-gradient(90deg, #1E3A8A 0%, #2563EB 50%, #14B8A6 100%); /* Gradient background */
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-title {
+  font-size: 1.5em;
+  margin-left: 20px;
+  color: white;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* Page Container Styles (Your existing page container styles go here) */
+.page-container {
+  background-color: white;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ...rest of your page container styles... */
+
+/* Enhanced Styles for Home, About, Skills, and Targeting Companies */
+.page-container h1 {
+  color: #1E3A8A; /* Deep Blue */
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.page-container {
+  /* Existing styles */
+  background: linear-gradient(
+    135deg,
+    #e0f2f1 0%,
+    #f0f4c3 25%,
+    #fff9c4 50%,
+    #ffecb3 75%,
+    #ffe0b2 100%
+  ); /* Light color gradient */
+}
+
+.page-container p {
+  line-height: 1.6;
+  font-size: 1.1em;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.page-container p:hover {
+  transform: scale(1.01);
+  transition: transform 0.2s ease;
+}
+
+.page-container {
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  .page-container h1 {
+    font-size: 2em;
+  }
+  .page-container p {
+    font-size: 1em;
+  }
+}
+
+/* Styles for Skill Sections */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.skill-section {
+  /* Existing styles */
+}
+
+.skill-section + .skill-section {
+  border-top: 2px solid #ddd;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.skill-card {
+  background: linear-gradient(90deg, #FF5733 0%, #FFC300 100%); /* Red-Orange Gradient */
+  border: none; /* Remove the border */
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white; /* Change text color to white for better contrast */
+  transition: transform 0.2s ease;
+}
+
+.skill-card h3 {
+  font-weight: bold;
+  color: white; /* Ensure heading is white */
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+  }
+  .skill-section {
+    min-width: auto;
+  }
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #1E3A8A; /* Deep Blue */
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative; /* Make it stick to the bottom */
+  bottom: 0;
+  width: 100%;
+  display: flex; /* Use flexbox to align items */
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.footer p {
+  margin: 0; /* Remove default margin */
+}
+
+/* Profile Photo Styles */
+.about-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.about-header h1 {
+  margin: 0;
+}
+
+.profile-container {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #2563EB;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+  .profile-container {
+    margin-left: 1rem;
+  }
+}
+
+/* Company Card Styles */
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.company-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.company-card:hover {
+  transform: translateY(-5px);
+}
+
+.company-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #1E3A8A; /* Deep Blue */
+}
+
+.company-card p {
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.company-card a {
+  color: #2563EB; /* Bright Blue */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.company-card a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styles */
+.social-links {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* CV and Resume Buttons */
+.cv-resume-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cv-button,
+.resume-button {
+  background: linear-gradient(90deg, #1E3A8A 0%, #2563EB 50%, #14B8A6 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: opacity 0.3s ease; /* Changed to opacity */
+}
+
+.cv-button:hover,
+.resume-button:hover {
+  opacity: 0.8;
+}
